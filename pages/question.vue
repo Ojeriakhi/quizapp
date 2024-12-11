@@ -137,7 +137,6 @@ export default {
       </div>
     </div>
 
-    <!-- Results Page (Final Page) -->
     <div v-if="showResults" class="flex justify-center items-center px-10 py-24">
       
       <div class="bg-white rounded-2xl px-[80px] py-[63px] relative rounded-l-none">
@@ -151,7 +150,6 @@ export default {
 
         
         
-        <!-- Result Section -->
         <div class="flex justify-center flex-col my-10">
           <img src="/public/images/QA.png" alt="Quiz Results" class="w-full" />
           <p class="text-[#101828] font-bold mt-4">
