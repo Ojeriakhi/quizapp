@@ -89,7 +89,7 @@ export default {
 
 
 <template>
-  <section class="bg-[#3F0DC5] h-screen overflow-hidden">
+  <section class="bg-[#3F0DC5] h-screen overflow-hidden items-center">
     <div v-if="!showResults">
       <div class="flex justify-center items-center px-10 py-10">
         <div>

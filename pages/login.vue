@@ -23,7 +23,7 @@
 
 
 <template>
-    <section class="bg-[#3F0DC5] h-screen">
+    <section class="bg-[#3F0DC5] h-screen items-center">
       <div class="flex justify-center items-center p-10 py-20">
         <div>
           <img src="/images/fingerprint.png" alt="" class="rounded-[60px] w-[500px] rounded-r-none">
