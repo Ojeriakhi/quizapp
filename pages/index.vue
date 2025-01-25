@@ -1,26 +1,32 @@
 <script>
-  export default {
-    data() {
-      return {
-        formData: {
-          fullName: "",
-          email: "",
-          password: "",
-        },
-      };
-    },
-    methods: {
-      handleLogin() {
-        if (this.formData.fullName && this.formData.email && this.formData.password) {
-          this.$router.push('/question'); 
-        } else {
-          alert("Please fill in all the fields!");
-        }
-      },
-    },
-  };
-  </script>
+import { ref } from 'vue';
+import { useRouter } from 'vue-router';
 
+export default {
+  setup() {
+    const formData = ref({
+      fullName: "",
+      email: "",
+      password: "",
+    });
+
+    const router = useRouter();
+
+    const handleLogin = () => {
+      if (formData.value.fullName && formData.value.email && formData.value.password) {
+        router.push('/question'); 
+      } else {
+        alert("Please fill in all the fields!");
+      }
+    };
+
+    return {
+      formData,
+      handleLogin,
+    };
+  },
+};
+</script>
 
 <template>
     <section class="bg-[#3F0DC5] h-screen items-center">
@@ -75,11 +81,4 @@
         </div>
       </div>
     </section>
-  </template>
-  
-  
-  
- 
-
-
-    
+</template>
